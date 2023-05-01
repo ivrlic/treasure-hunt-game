@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Čudesna Potraga Igra</title>
+</head>
+
+<body>
+    <div id="play-game-container">
+        <header class="game-header">
+            <nav class="nav">
+                <button class="nav-toggle-btn">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="main-menu_hr.html">
+                            <button class="nav-btn">GLAVNI IZBORNIK</button> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="play-game_hr.html">
+                            <button class="nav-btn">POKRENI PONOVNO</button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div id="back-img-cont">
+            <img id="back-img" src="../images/background/1280x1280map.png" alt="the treasure hunt background image">
+            <div id="location-cont"></div>
+            <div id="blur-cont"></div>
+        </div>
+
+        <div class="modal intro-modal" id="intro-play-modal">
+            <h2>ČUDESNA POTRAGA</h2>
+            <div id="solve-clue-container">
+                <p>Nalaziš se na početku čudesne potrage za blagom. Ispred tebe su teški i izazovni zadaci. Gusari, čudovišta, čarobnjaci... tko zna koga ćeš sve sresti i s kim se sve morati suočiti. Zato se saberi i koncentriraj. Daj sve od sebe i sigurno ćeš uspjeti doći do blaga! Sretno!</p>
+            </div>
+            <button class="confirm-btn">&check;</button>
+        </div>
+        <div class="modal intro-modal not-displayed" id="intro2-play-modal"></div>
+        <div class="modal not-displayed" id="clue-modal"></div>
+
+    </div>
+    <script src="../play-game.js" type="module"></script>
+</body>
+
+</html>

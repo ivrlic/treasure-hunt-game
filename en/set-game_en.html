@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>The Wonder Quest Set Game</title>
+</head>
+
+<body>
+    <div id="set-game-container">
+        <header class="game-header">
+            <nav class="nav">
+                <button class="nav-toggle-btn">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="main-menu_en.html">
+                            <button class="nav-btn">MAIN MENU</button> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="restart-set-up" class="nav-btn">RESTART</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="modal intro-modal" id="intro-set-modal">
+            <h2>SETTING UP THE GAME</h2>
+            <p>In the following steps create clues that will lead the player from one place to another all the way to the treasure. You can set up a minimum of 2 and maximum of 10 clues.</p>
+            <p>You have also to come up with codes that the player will enter as proof that he has arrived at the correct location.</p>
+            <p>For more information, read the <a href="instructions_en.html">INSTRUCTIONS.</a></p>
+            <button class="confirm-btn">&check;</button>
+        </div>
+        <div class="modal not-displayed" id="clue-modal"></div>
+
+    </div>
+    <script src="../set-game.js" type="module"></script>
+</body>
+
+</html>

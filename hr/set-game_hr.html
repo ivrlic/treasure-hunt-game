@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <title>Čudesna Potraga Postavljanje Igre</title>
+</head>
+
+<body>
+    <div id="set-game-container">
+        <header class="game-header">
+            <nav class="nav">
+                <button class="nav-toggle-btn">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="main-menu_hr.html">
+                            <button class="nav-btn">GLAVNI IZBORNIK</button> 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="restart-set-up" class="nav-btn">POKRENI PONOVNO</button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <div class="modal intro-modal" id="intro-set-modal">
+            <h2>POSTAVLJANJE IGRE</h2>
+            <p>U sljedećim koracima napravite tragove koji će voditi igrača od početne lokacije postepeno sve do blaga. Možete postaviti najmanje 2 traga, a najviše 10.</p>
+            <p>Također je potrebno osmisliti šifre koje će igrač unijeti kao dokaz da je stigao na pravo mjesto.</p>
+            <p>Za više informacija pogledaj <a href="instructions_hr.html">UPUTE.</a></p>
+            <button class="confirm-btn">&check;</button>
+        </div>
+        <div class="modal not-displayed" id="clue-modal"></div>
+
+    </div>
+    <script src="../set-game.js" type="module"></script>
+</body>
+
+</html>
